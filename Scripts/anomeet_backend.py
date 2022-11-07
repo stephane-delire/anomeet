@@ -52,6 +52,7 @@ def index():
 	# ici je sais qu'il me faut data[0]
 
 
+	print("test")
 	return str(data[0])
 
 
