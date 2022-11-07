@@ -1,0 +1,2 @@
+cd Scripts
+activate.bat
