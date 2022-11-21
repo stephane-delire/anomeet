@@ -33,7 +33,7 @@ def index():
 
 
 	# C'est le curseur qui va executer la commande SQL :
-	cur.execute('SELECT * FROM "public"."hello";')
+	cur.execute('SELECT "content" FROM "public"."hello";')
 
 	# Maintenant le curseur contient l'objet reçu de la base de données
 	# qu'il faut convertir, soit en fetchone pour une seule ligne, soit en fetchall pour tout récupérer
@@ -46,6 +46,7 @@ def index():
 	# Je sais dans mon cas que je veux data[0], mais il est souvent nécessaire
 	# de faire un print de cette list afin de savoir dans quel ordre les données
 	# sont agencées...
+	
 	data = data[0]
 
 
